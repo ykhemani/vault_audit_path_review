@@ -6,7 +6,7 @@
 ## Prerequisites
 
 * [Python 3](https://www.python.org/) - this script was tested against Python 3.12.3.
-* A Vault audit log.
+* Vault audit log file.
 
 ## Usage
 
