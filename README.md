@@ -74,3 +74,19 @@ $ ./vault_audit_path_review.py --audit_log audit.log --secret_engine_mount vault
 }
 ```
 
+```
+$ ./vault_audit_path_review.py --audit_log audit.log --secret_engine_mount mysql-demo
+2024-06-27 19:06:57 UTC: [INFO] Starting vault_audit_path_review.py
+2024-06-27 19:06:57 UTC: [INFO] Audit log is: audit.log
+2024-06-27 19:06:57 UTC: [INFO] Reporting depth is: 6
+2024-06-27 19:06:57 UTC: [INFO] Secret engine mount is: mysql-demo
+2024-06-27 19:06:57 UTC: [INFO] Show top n paths is: -1
+2024-06-27 19:06:57 UTC: [INFO] Able to read: audit.log
+2024-06-27 19:06:57 UTC: [INFO] Parsing audit log: audit.log
+{
+  "mysql-demo/creds/demo-web-role": 133,
+  "mysql-demo/creds/demo-dba-role": 34,
+  "mysql-demo/config/demodb": 1,
+  "mysql-demo/roles/mysql-web-role": 1
+}
+```
